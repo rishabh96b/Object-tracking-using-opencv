@@ -24,7 +24,7 @@ if name == __main__:
     #initialize the tracker
     ret = tracker.init(frame,bound_box)
 
-    #start streaming the video
+    #start streaming the video using .read() method
     while True:
         ret,frame = vid_stream.read()
         if not ret:
